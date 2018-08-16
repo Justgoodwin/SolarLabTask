@@ -164,6 +164,14 @@
     <Compile Include="Migrations\201808141056106_addNotePadClass.Designer.cs">
       <DependentUpon>201808141056106_addNotePadClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808161311074_addedAttributeWhoMadeATask.cs" />
+    <Compile Include="Migrations\201808161311074_addedAttributeWhoMadeATask.Designer.cs">
+      <DependentUpon>201808161311074_addedAttributeWhoMadeATask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808161402030_updateNotepadClass.cs" />
+    <Compile Include="Migrations\201808161402030_updateNotepadClass.Designer.cs">
+      <DependentUpon>201808161402030_updateNotepadClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Notepad.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -238,6 +246,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201808141056106_addNotePadClass.resx">
       <DependentUpon>201808141056106_addNotePadClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808161311074_addedAttributeWhoMadeATask.resx">
+      <DependentUpon>201808161311074_addedAttributeWhoMadeATask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808161402030_updateNotepadClass.resx">
+      <DependentUpon>201808161402030_updateNotepadClass.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

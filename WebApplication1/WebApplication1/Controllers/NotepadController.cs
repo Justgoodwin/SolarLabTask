@@ -50,6 +50,8 @@ namespace WebApplication1.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ID,Task")] Notepad notepad)
         {
+            notepad.MachineName = takeMachineName();
+            notepad.TimeWhenTaskCreated = DateTime.UtcNow;
             if (ModelState.IsValid)
             {
                 db.NotePad.Add(notepad);
@@ -124,6 +126,13 @@ namespace WebApplication1.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        public string takeMachineName()//for find local machine name
+        {
+            string machineName = Environment.MachineName;
+
+            return machineName;
         }
     }
 }

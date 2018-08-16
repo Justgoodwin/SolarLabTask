@@ -11,7 +11,7 @@ namespace WebApplication1.DataAccessLayer
     {
         protected override void Seed(NotePadContext context)
         {
-            var notepadTasks = new List<Notepad> { new Notepad { ID = 0, Task = "asdasdsa" } };
+            var notepadTasks = new List<Notepad> { };
 
             notepadTasks.ForEach(tasks => context.NotePad.Add(tasks));
             context.SaveChanges();
